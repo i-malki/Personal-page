@@ -146,17 +146,19 @@ body {
 }
 
 /* ===== Social Icons ===== */
-.social-icons img {
-    height: 32px;      /* hauteur par défaut pour les logos normaux */
-    width: auto;
-    max-width: 60px;   /* limite largeur pour logos rectangulaires */
-    transition: transform 0.3s;
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+    align-items: center;
 }
 
-/* Spécifique pour le logo CIML */
-.social-icons img[alt="CIML"] {
-    height: 40px;      /* un peu plus grand que les autres */
-    max-width: 80px;   /* limite largeur pour ne pas dépasser */
+.social-icons img {
+    height: 32px;      /* tous les logos ont la même hauteur */
+    width: auto;        /* garde les proportions originales */
+    max-width: 60px;    /* limite la largeur pour les logos rectangulaires */
+    transition: transform 0.3s;
 }
 
 .social-icons img:hover {
