@@ -151,13 +151,13 @@ body {
     gap: 15px;
     justify-content: center;
     margin-top: 15px;
-    align-items: center; /* aligne les logos sur la même ligne */
+    align-items: center;
 }
 
 .social-icons img {
-    height: 32px;         /* hauteur fixe pour tous les logos */
-    width: auto;           /* largeur auto pour garder les proportions */
-    max-width: 60px;       /* limite la largeur du logo TAGC rectangulaire */
+    height: 32px;      /* tous les logos ont la même hauteur */
+    width: auto;        /* garde les proportions originales */
+    max-width: 60px;    /* limite la largeur pour les logos rectangulaires */
     transition: transform 0.3s;
 }
 
