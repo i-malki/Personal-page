@@ -55,15 +55,19 @@ body {
 }
 
 .btn-contact {
-    background-color: #ffcd38;
-    color: #333 !important;
-    padding: 6px 12px;
+    background-color: #ffffff;  /* fond blanc */
+    color: #2563eb !important;  /* texte bleu foncé */
+    padding: 6px 15px;
     border-radius: 5px;
-    transition: background 0.3s;
+    border: 2px solid #2563eb;  /* bord bleu */
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+    text-decoration: none;
 }
 
 .btn-contact:hover {
-    background-color: #eab308;
+    background-color: #2563eb; /* bleu foncé au hover */
+    color: #ffffff !important; /* texte devient blanc */
 }
 
 /* ===== Hero Section ===== */
@@ -72,7 +76,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     padding: 50px 0;
-    background: linear-gradient(to right, #e0f2fe, #fef3c7);
+    background-color: #dbeafe; /* Bleu clair */
     border-bottom: 2px solid #2563eb;
     text-align: center;
 }
@@ -226,11 +230,13 @@ h2 {
 }
 
 /* ===== Skills / Badges ===== */
+/* ===== Skills / Badges ===== */
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 .skill-badge {
@@ -239,17 +245,13 @@ h2 {
     font-size: 0.85rem;
     font-weight: 500;
     color: #fff;
-    transition: transform 0.2s;
 }
 
-.skill-badge:hover {
-    transform: scale(1.1);
-}
-
-.badge-data { background-color: #2563eb; }
-.badge-dev { background-color: #9333ea; }
-.badge-bi { background-color: #059669; }
-.badge-db { background-color: #f97316; }
+/* Couleurs harmonisées */
+.badge-data { background-color: #2563eb; }   /* bleu foncé pour Python, R, Seurat, Git */
+.badge-dev { background-color: #9333ea; }    /* violet foncé pour Linux/Bash */
+.badge-bi { background-color: #2563eb; }     /* bleu foncé si tu ajoutes d'autres outils */
+.badge-db { background-color: #2563eb; }     /* bleu foncé pour les bases de données éventuelles */
 
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
